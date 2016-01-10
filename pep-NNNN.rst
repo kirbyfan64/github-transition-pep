@@ -202,6 +202,16 @@ The fate of hg.python.org
 -------------------------
 XXX
 
+Rejected Ideas
+==============
+Separate Python 2 and Python 3 repositories
+-------------------------------------------
+XXX
+
+Commit multi-release changes in bugfix branch first
+---------------------------------------------------
+XXX
+
 
 References
 ==========
