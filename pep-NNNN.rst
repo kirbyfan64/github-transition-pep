@@ -25,20 +25,20 @@ process was becoming a hindrance. As an example, for an external
 contributor to submit a fix for a bug that eventually was committed,
 the basic steps were:
 
-0. Open an issue for the bug at bugs.python.org [#b.p.o]_
-0. Checkout out the CPython source code from hg.python.org [#h.p.o]_
-0. Make the fix
-0. Upload a patch
-0. Have a core developer review the patch using our fork of the
+1. Open an issue for the bug at bugs.python.org [#b.p.o]_
+2. Checkout out the CPython source code from hg.python.org [#h.p.o]_
+3. Make the fix
+4. Upload a patch
+5. Have a core developer review the patch using our fork of the
    Rietveld code review tool [#rietveld]_
-0. Download the patch to make sure it still applies cleanly
-0. Run the test suite
-0. Commit the change
-0. If the change was for a bugfix release, merge into the
+6. Download the patch to make sure it still applies cleanly
+7. Run the test suite
+8. Commit the change
+9. If the change was for a bugfix release, merge into the
    in-development branch
-0. Run the test suite again
-0. Commit the merge
-0. Push the changes
+10. Run the test suite again
+11. Commit the merge
+12. Push the changes
 
 The problem with this is it is a rather heavy process if you simply
 want to fix a spelling mistake in the documentation. Even in this
@@ -81,11 +81,11 @@ Repositories to Migrate
 While hg.python.org [#h.p.o]_ hosts many repositories, there are only
 five key repositories that must  move:
 
-0. ``devinabox`` [#devinabox]_
-0. benchmarks [#benchmarks-repo]_
-0. peps [#peps-repo]_
-0. devguide [#devguide-repo]_
-0. cpython [#cpython-repo]_
+1. ``devinabox`` [#devinabox]_
+2. benchmarks [#benchmarks-repo]_
+3. peps [#peps-repo]_
+4. devguide [#devguide-repo]_
+5. cpython [#cpython-repo]_
 
 The ``devinabox`` and benchmarks repositories are code-only. The peps
 and devguide repositories involve the generation of webpages. And the
