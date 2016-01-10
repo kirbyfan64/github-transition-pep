@@ -76,6 +76,129 @@ were [#reasons]_:
 * Our BDFL preferred GitHub
 
 
+Repositories to Migrate
+=======================
+While hg.python.org [#h.p.o]_ hosts many repositories, there are only
+five key repositories that must  move:
+
+0. ``devinabox`` [#devinabox]_
+0. benchmarks [#benchmarks-repo]_
+0. peps [#peps-repo]_
+0. devguide [#devguide-repo]_
+0. cpython [#cpython-repo]_
+
+The ``devinabox`` and benchmarks repositories are code-only. The peps
+and devguide repositories involve the generation of webpages. And the
+cpython repository has special requirements for integration with
+bugs.python.org [#b.p.o]_.
+
+Migration Plan
+==============
+The migration plan is separated into sections based on what is
+required to migrate the repositories listed in the
+`Repositories to Migrate`_ section. Completion of requirements
+outlined in each section should unblock the migration of the related
+repositories. The sections are expected to be completed in order, but
+not the requirements within a section.
+
+Requirements for Code-Only Repositories
+---------------------------------------
+Completion of the requirements in this section will allow the
+``devinabox`` and benchmarks repositories to move to GitHub.
+
+Create a `python-dev` team
+''''''''''''''''''''''''''
+XXX
+
+Define commands to migrate from Mercurial to Git
+''''''''''''''''''''''''''''''''''''''''''''''''
+XXX
+
+CLA enforcement
+'''''''''''''''
+XXX
+
+Adding GitHub username support to bugs.python.org
++++++++++++++++++++++++++++++++++++++++++++++++++
+XXX
+
+A bot to enforce CLA signing
+++++++++++++++++++++++++++++
+XXX add a label for signed or not signed (signed case is to notice if bot is down)
+
+Converting a Mercurial repository to Git
+''''''''''''''''''''''''''''''''''''''''
+XXX
+
+Requirements for Webpage-Related Repositories
+---------------------------------------------
+XXX
+
+Requirements for the cpython Repository
+---------------------------------------
+XXX
+
+Document steps to commit a pull request
+'''''''''''''''''''''''''''''''''''''''
+XXX master, then cherrypick
+
+Handling ``Misc/NEWS``
+''''''''''''''''''''''
+XXX
+
+Handling ``Misc/ACKS``
+''''''''''''''''''''''
+XXX
+
+Linking pull requests to issues
+'''''''''''''''''''''''''''''''
+XXX
+
+Post a link to the pull request in the issue
+++++++++++++++++++++++++++++++++++++++++++++
+XXX
+
+Notify the issue if the pull request is committed
++++++++++++++++++++++++++++++++++++++++++++++++++
+XXX
+
+Update linking service for mapping commit IDs to URLs
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
+XXX
+
+Optional, Planned Features
+--------------------------
+XXX
+
+Bot to handle pull request merging
+''''''''''''''''''''''''''''''''''
+XXX must handle multiple branches, news entry, commit message
+XXX commit queue
+XXX naming
+
+Continuous integration per pull request
+'''''''''''''''''''''''''''''''''''''''
+XXX
+
+Test coverage report
+''''''''''''''''''''
+XXX
+
+Notifying issues of pull request review comments
+''''''''''''''''''''''''''''''''''''''''''''''''
+XXX
+
+Allow for logging into bugs.python.org using a GitHub account
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+XXX
+
+Open Issues
+===========
+The fate of hg.python.org
+-------------------------
+XXX
+
+
 References
 ==========
 .. [#h.p.o] https://hg.python.org
@@ -99,6 +222,16 @@ References
 .. [#reasons] Email to core-workflow outlining reasons why GitHub was selected
    (https://mail.python.org/pipermail/core-workflow/2016-January/000345.html)
 
+.. [#benchmarks-repo] Mercurial repository for the Unified Benchmark Suite
+   (https://hg.python.org/benchmarks/)
+
+.. [#devinabox] Mercurial repository for ``devinabox`` (https://hg.python.org/devinabox/)
+
+.. [#peps-repo] Mercurial repository of the Python Enhancement Proposals (https://hg.python.org/peps/)
+
+.. [#devguide-repo] Mercurial repository for the Python Developer's Guide (https://hg.python.org/devguide/)
+
+.. [#cpython-repo] Mercurial repository for CPython (https://hg.python.org/cpython/)
 
 Copyright
 =========
