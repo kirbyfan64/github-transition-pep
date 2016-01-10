@@ -166,6 +166,10 @@ Update linking service for mapping commit IDs to URLs
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 XXX
 
+Notify ``#python-dev`` of commits
+'''''''''''''''''''''''''''''''''
+XXX
+
 Optional, Planned Features
 --------------------------
 XXX
