@@ -188,12 +188,20 @@ Test coverage report
 ''''''''''''''''''''
 XXX
 
-Notifying issues of pull request review comments
-''''''''''''''''''''''''''''''''''''''''''''''''
+Notifying issues of pull request comments
+'''''''''''''''''''''''''''''''''''''''''
 XXX
 
-Allow for logging into bugs.python.org using a GitHub account
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Allow bugs.python.org to use GitHub as a login provider
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''
+XXX
+
+Web hooks for re-generating web content
+'''''''''''''''''''''''''''''''''''''''
+XXX devguide, peps, docs.python.org
+
+Splitting out parts of the documentation into their own repositories
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 XXX
 
 Open Issues
