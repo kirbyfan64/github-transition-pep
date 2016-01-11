@@ -138,15 +138,40 @@ open issue: `Tools and commands to move from Mercurial to Git`_.
 
 CLA enforcement
 '''''''''''''''
-XXX
+A key part of any open source project is making sure that its source
+code can be properly licensed. This requires making sure all people
+making contributions have signed a contributor license agreement
+(CLA) [#cla]_. Up until now, enforcement of CLA signing of
+contributed code has been enforced by core developers checking
+whether someone had an ``*`` by their username on
+bugs.python.org [#b.p.o]_. With this migration the plan is to start
+off with automated checking and enforcement of contributors signing
+the CLA.
 
 Adding GitHub username support to bugs.python.org
 +++++++++++++++++++++++++++++++++++++++++++++++++
-XXX
+To keep tracking of CLA signing under the direct control of the PSF,
+tracking who has signed the PSF CLA will be continued by marking that
+fact as part of someone's bugs.python.org user profile. What this
+means is that an association will be needed between a person's
+bugs.python.org [#b.p.o]_ account and their GitHub account, which
+will be done through a new field in a user's profile.
 
 A bot to enforce CLA signing
 ++++++++++++++++++++++++++++
-XXX add a label for signed or not signed (signed case is to notice if bot is down)
+With an association between someone's GitHub account and their
+bugs.python.org [#b.p.o]_ account which has the data as to whether
+someone has signed the CLA, a bot can monitor pull requests on
+GitHub and denote whether the contributor has signed the CLA.
+
+If the user has signed the CLA, the bot will add a positive label to
+the issue to denote the pull request has no CLA issues (e.g., a green
+label stating, "CLA: ✓"). If the contributor has not signed a CLA,
+a negative label will be added to the pull request will be blocked
+(e.g., a red label stating, "CLA: ✗"). Using a label for both
+positive and negative cases provides a fallback notification if the
+bot happens to fail, preventing potential false-positives or
+false-negatives.
 
 Requirements for Webpage-Related Repositories
 ---------------------------------------------
@@ -288,6 +313,8 @@ References
 
 .. [#github-org-perms] GitHub repository permission levels
    (https://help.github.com/enterprise/2.4/user/articles/repository-permission-levels-for-an-organization/)
+
+.. [#cla] Python Software Foundation Contributor Agreement (https://www.python.org/psf/contrib/contrib-form/)
 
 Copyright
 =========
