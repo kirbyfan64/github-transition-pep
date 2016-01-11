@@ -174,7 +174,9 @@ a negative label will be added to the pull request will be blocked
 using GitHub's status API (e.g., a red label stating, "CLA: ✗").
 Using a label for both positive and negative cases provides a
 fallback notification if the bot happens to fail, preventing
-potential false-positives or false-negatives.
+potential false-positives or false-negatives. It also allows for an
+easy way to trigger the bot again by simply removing a CLA-related
+label.
 
 Requirements for We-Related Repositories
 ----------------------------------------
@@ -197,7 +199,7 @@ XXX master, then cherrypick
 
 Handling ``Misc/NEWS``
 ''''''''''''''''''''''
-XXX
+XXX https://pypi.python.org/pypi/towncrier http://bugs.python.org/issue18967
 
 Handling ``Misc/ACKS``
 ''''''''''''''''''''''
@@ -205,7 +207,7 @@ XXX
 
 Linking pull requests to issues
 '''''''''''''''''''''''''''''''
-XXX
+XXX https://hg.python.org/lookup/
 
 Post a link to the pull request in the issue
 ++++++++++++++++++++++++++++++++++++++++++++
@@ -233,7 +235,7 @@ XXX
 
 Optional, Planned Features
 --------------------------
-XXX
+XXX https://wiki.python.org/moin/TrackerDevelopmentPlanning
 
 Bot to handle pull request merging
 ''''''''''''''''''''''''''''''''''
@@ -243,11 +245,11 @@ XXX naming
 
 Continuous integration per pull request
 '''''''''''''''''''''''''''''''''''''''
-XXX
+XXX https://travis-ci.org/ https://codeship.com/ https://circleci.com/
 
 Test coverage report
 ''''''''''''''''''''
-XXX
+XXX https://coveralls.io/ https://coveralls.io/
 
 Notifying issues of pull request comments
 '''''''''''''''''''''''''''''''''''''''''
