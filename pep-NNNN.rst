@@ -188,6 +188,10 @@ Notify ``#python-dev`` of commits
 '''''''''''''''''''''''''''''''''
 XXX
 
+Create https://git.python.org
+'''''''''''''''''''''''''''''
+XXX
+
 Optional, Planned Features
 --------------------------
 XXX
