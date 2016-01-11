@@ -93,13 +93,14 @@ Repositories to Migrate
 While hg.python.org [#h.p.o]_ hosts many repositories, there are only
 five key repositories that must  move:
 
-1. ``devinabox`` [#devinabox]_
+1. devinabox [#devinabox]_
 2. benchmarks [#benchmarks-repo]_
+3. tracker [#tracker-repo]_
 3. peps [#peps-repo]_
 4. devguide [#devguide-repo]_
 5. cpython [#cpython-repo]_
 
-The ``devinabox`` and benchmarks repositories are code-only. The peps
+The devinabox and benchmarks repositories are code-only. The peps
 and devguide repositories involve the generation of webpages. And the
 cpython repository has special requirements for integration with
 bugs.python.org [#b.p.o]_.
@@ -116,9 +117,11 @@ not the requirements within a section.
 Requirements for Code-Only Repositories
 ---------------------------------------
 Completion of the requirements in this section will allow the
-``devinabox`` and benchmarks repositories to move to GitHub. While
-``devinabox`` has a sufficiently descriptive name, the benchmarks
-repository does not, hence it will be named "python-benchmark-suite".
+devinabox, benchmarks, and tracker repositories to move to
+GitHub. While devinabox has a sufficiently descriptive name, the
+benchmarks repository does not, hence it will be named
+"python-benchmark-suite". The tracker repo also has a misleading name
+and will be renamed "bugs.python.org".
 
 Create a 'python-dev' team
 ''''''''''''''''''''''''''
@@ -321,9 +324,11 @@ References
 .. [#benchmarks-repo] Mercurial repository for the Unified Benchmark Suite
    (https://hg.python.org/benchmarks/)
 
-.. [#devinabox] Mercurial repository for ``devinabox`` (https://hg.python.org/devinabox/)
+.. [#devinabox] Mercurial repository for devinabox (https://hg.python.org/devinabox/)
 
 .. [#peps-repo] Mercurial repository of the Python Enhancement Proposals (https://hg.python.org/peps/)
+
+.. [#tracker-repo] bugs.python.org code repository (https://hg.python.org/tracker/python-dev/)
 
 .. [#devguide-repo] Mercurial repository for the Python Developer's Guide (https://hg.python.org/devguide/)
 
