@@ -69,11 +69,23 @@ On January 1, 2016 the decision was made by Brett Cannon to move our
 development process to GitHub. The key reasons for choosing GitHub
 were [#reasons]_:
 
+* Maintaining our own infrastructure has been a burden on volunteers
+  (e.g., we currently use a custom fork of Rietveld [#rietveld]_
+  that is not being maintained)
+* Our custom workflow is very time-consuming for core developers
+  (not enough automated tooling built to help support it)
+* Our custom workflow was a hindrance to external contributors
+  (acts as a barrier of entry due to time required to ramp up on
+  development process)
 * There was no feature differentiating GitLab from GitHub beyond
   GitLab being open source
 * Familiarity with GitHub was far higher amongst core developers and
   external contributors than with GitLab
-* Our BDFL preferred GitHub
+* Our BDFL preferred GitHub (who would be the first person to tell
+  you that his opinion shouldn't matter, but the person making the
+  decision felt it was important that the BDFL feel comfortable with
+  the workflow of his own programming language to encourage his
+  participation)
 
 
 Repositories to Migrate
