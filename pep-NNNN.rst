@@ -118,12 +118,17 @@ Requirements for Code-Only Repositories
 Completion of the requirements in this section will allow the
 ``devinabox`` and benchmarks repositories to move to GitHub.
 
-Create a `python-dev` team
+Create a 'python-dev' team
 ''''''''''''''''''''''''''
-XXX
+To manage permissions, a 'python-dev' team will be created as part of
+the python organization [#github-python-org]_. Any repository that is
+moved will have the 'python-dev' team added to it with write
+permissions [#github-org-perms]_. Anyone who previously had writes to
+manage SSH keys on hg.python.org will become a team maintainer for the
+'python-dev' team.
 
-Define commands to migrate from Mercurial to Git
-''''''''''''''''''''''''''''''''''''''''''''''''
+Define commands to move a Mercurial repository to Git
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 XXX
 
 CLA enforcement
@@ -137,10 +142,6 @@ XXX
 A bot to enforce CLA signing
 ++++++++++++++++++++++++++++
 XXX add a label for signed or not signed (signed case is to notice if bot is down)
-
-Converting a Mercurial repository to Git
-''''''''''''''''''''''''''''''''''''''''
-XXX
 
 Requirements for Webpage-Related Repositories
 ---------------------------------------------
@@ -266,6 +267,11 @@ References
 .. [#devguide-repo] Mercurial repository for the Python Developer's Guide (https://hg.python.org/devguide/)
 
 .. [#cpython-repo] Mercurial repository for CPython (https://hg.python.org/cpython/)
+
+.. [#github-python-org] Python organization on GitHub (https://github.com/python)
+
+.. [#github-org-perms] GitHub repository permission levels
+   (https://help.github.com/enterprise/2.4/user/articles/repository-permission-levels-for-an-organization/)
 
 Copyright
 =========
