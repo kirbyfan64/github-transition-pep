@@ -116,7 +116,9 @@ not the requirements within a section.
 Requirements for Code-Only Repositories
 ---------------------------------------
 Completion of the requirements in this section will allow the
-``devinabox`` and benchmarks repositories to move to GitHub.
+``devinabox`` and benchmarks repositories to move to GitHub. While
+``devinabox`` has a sufficiently descriptive name, the benchmarks
+repository does not, hence it will be named "python-benchmark-suite".
 
 Create a 'python-dev' team
 ''''''''''''''''''''''''''
@@ -129,7 +131,10 @@ manage SSH keys on hg.python.org will become a team maintainer for the
 
 Define commands to move a Mercurial repository to Git
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
-XXX
+Since moving to GitHub also entails moving to Git [#git]_, we must
+decide what tools and commands we will run to translate a Mercurial
+repository to Git. The exact tools and steps to use are an
+`open issue <#open-issue-hg-to-git>`__.
 
 CLA enforcement
 '''''''''''''''
@@ -222,6 +227,15 @@ Open Issues
 The fate of hg.python.org
 -------------------------
 XXX
+
+.. _open-issue-hg-to-git:
+
+Tools and commands to move from Mercurial to Git
+------------------------------------------------
+A decision needs to be made on exactly what tooling and what commands
+involving those tools will be used to convert a Mercurial repository
+to Git. Currently a suggestion has been made to use
+https://github.com/frej/fast-export.
 
 Rejected Ideas
 ==============
