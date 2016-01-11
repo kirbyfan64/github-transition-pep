@@ -48,10 +48,10 @@ languishing on the issue tracker due to core developers not being
 able to work through the backlog fast enough to keep up with
 submissions. This led to a side-effect issue of discouraging
 outside contribution which is critical for an open source project to
-staby vibrant and have a viable future.
+stay vibrant and have a viable future.
 
 Hence the decision was made in late 2014 that a move to a new
-development workflow was needed. A request was put out for PEPs
+development workflow was needed. A request for PEPs
 proposing new workflows was made, in the end leading to two:
 PEP 481 and PEP 507 proposing GitHub [#github]_ and
 GitLab [#gitlab]_, respectively.
@@ -125,7 +125,7 @@ Create a 'python-dev' team
 To manage permissions, a 'python-dev' team will be created as part of
 the python organization [#github-python-org]_. Any repository that is
 moved will have the 'python-dev' team added to it with write
-permissions [#github-org-perms]_. Anyone who previously had writes to
+permissions [#github-org-perms]_. Anyone who previously had rights to
 manage SSH keys on hg.python.org will become a team maintainer for the
 'python-dev' team.
 
