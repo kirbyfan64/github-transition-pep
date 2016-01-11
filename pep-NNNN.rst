@@ -168,14 +168,21 @@ If the user has signed the CLA, the bot will add a positive label to
 the issue to denote the pull request has no CLA issues (e.g., a green
 label stating, "CLA: ✓"). If the contributor has not signed a CLA,
 a negative label will be added to the pull request will be blocked
-(e.g., a red label stating, "CLA: ✗"). Using a label for both
-positive and negative cases provides a fallback notification if the
-bot happens to fail, preventing potential false-positives or
-false-negatives.
+using GitHub's status API (e.g., a red label stating, "CLA: ✗").
+Using a label for both positive and negative cases provides a
+fallback notification if the bot happens to fail, preventing
+potential false-positives or false-negatives.
 
-Requirements for Webpage-Related Repositories
----------------------------------------------
-XXX
+Requirements for We-Related Repositories
+----------------------------------------
+Due to their use for generating webpages, the devguide [#devguide]_
+and peps [#peps]_ repositories need their respective processes
+updated to pull from their new Git repositories.
+
+The devguide repository might also need to be named
+``python-devguide`` to make sure the repository is not ambiguous
+when viewed in isolation from the
+python organization [#github-python-org]_.
 
 Requirements for the cpython Repository
 ---------------------------------------
@@ -215,6 +222,10 @@ XXX
 
 Create https://git.python.org
 '''''''''''''''''''''''''''''
+XXX
+
+Backup of pull request data
+'''''''''''''''''''''''''''
 XXX
 
 Optional, Planned Features
@@ -257,6 +268,11 @@ XXX list all sections (w/ backlinks) stating the status
 
 Open Issues
 ===========
+For this PEP, open issues are ones where a decision needs to be made
+to how to approach or solve a problem. Open issues do not entail
+coordination issues such as who is going to write a certain bit of
+code.
+
 The fate of hg.python.org
 -------------------------
 XXX
