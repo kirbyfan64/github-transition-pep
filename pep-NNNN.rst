@@ -251,6 +251,10 @@ Splitting out parts of the documentation into their own repositories
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 XXX
 
+Status
+======
+XXX list all sections (w/ backlinks) stating the status
+
 Open Issues
 ===========
 The fate of hg.python.org
