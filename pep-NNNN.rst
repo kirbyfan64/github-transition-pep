@@ -134,7 +134,7 @@ Define commands to move a Mercurial repository to Git
 Since moving to GitHub also entails moving to Git [#git]_, we must
 decide what tools and commands we will run to translate a Mercurial
 repository to Git. The exact tools and steps to use are an
-`open issue <open-issue-hg-to-git_>`__.
+`open issue <open-issue-hg-to-git_>`_.
 
 CLA enforcement
 '''''''''''''''
