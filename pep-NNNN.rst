@@ -178,7 +178,7 @@ potential false-positives or false-negatives. It also allows for an
 easy way to trigger the bot again by simply removing a CLA-related
 label.
 
-Requirements for We-Related Repositories
+Requirements for Web-Related Repositories
 ----------------------------------------
 Due to their use for generating webpages, the devguide [#devguide]_
 and peps [#peps]_ repositories need their respective processes
