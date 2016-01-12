@@ -91,14 +91,14 @@ were [#reasons]_:
 Repositories to Migrate
 =======================
 While hg.python.org [#h.p.o]_ hosts many repositories, there are only
-five key repositories that must  move:
+six key repositories that must  move:
 
 1. devinabox [#devinabox]_
 2. benchmarks [#benchmarks-repo]_
 3. tracker [#tracker-repo]_
-3. peps [#peps-repo]_
-4. devguide [#devguide-repo]_
-5. cpython [#cpython-repo]_
+4. peps [#peps-repo]_
+5. devguide [#devguide-repo]_
+6. cpython [#cpython-repo]_
 
 The devinabox and benchmarks repositories are code-only. The peps
 and devguide repositories involve the generation of webpages. And the
