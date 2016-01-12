@@ -191,11 +191,37 @@ python organization [#github-python-org]_.
 
 Requirements for the cpython Repository
 ---------------------------------------
-XXX
+Obviously the most active and important repository currently hosted
+at hg.python.org [#h.p.o]_ is the cpython
+repository [#cpython-repo]_. Because of its importance and high-
+frequency use, it requires more tooling before being moved to GitHub
+compared to the other repositories mentioned in this PEP.
 
 Document steps to commit a pull request
 '''''''''''''''''''''''''''''''''''''''
-XXX master, then cherrypick
+During the process of choosing a new development workflow, it was
+decided that a linear history is desired. What this means is that the
+convenient "Merge" button in GitHub pull requests is undesireable as
+it creates a merge commit along with all of the contributor's
+individual commits (this does not affect the other repositories where
+the desire for a linear history isn't nearly as strong).
+
+Luckily Git [#git]_ does not require GitHub's workflow and so one can
+be chosen which gives us a linear history by using Git's CLI. The
+expectation is that all pull requests will be fast-forwarded and
+rebased before being pushed to the master repository. This should
+keep proper attribution to the pull request author in the Git
+history.
+
+A second set of recommended commands will also be written for
+committing a contribution from a patch file uploaded to
+bugs.python.org [#b.p.o]_. This will obviously help keep the linear
+history, but it will need to be made to have attribution to the patch
+creator.
+
+The exact sequence of commands that will be given as guidelines to
+core developers is an open issue:
+`Git CLI commands for committing a pull request to cpython`_.
 
 Handling ``Misc/NEWS``
 ''''''''''''''''''''''
@@ -288,6 +314,18 @@ A decision needs to be made on exactly what tooling and what commands
 involving those tools will be used to convert a Mercurial repository
 to Git. Currently a suggestion has been made to use
 https://github.com/frej/fast-export.
+
+Git CLI commands for committing a pull request to cpython
+---------------------------------------------------------
+Because Git [#git]_ may be a new version control system for core
+developers, the commands people are expected to run will need to be
+written down. These commands also need to keep a linear history while
+giving proper attribution to the pull request author.
+
+Another set of commands will also be necessary for when working with
+a patch file uploaded to bugs.python.org [#b.p.o]_. Here the linear
+history will be kept implicitly, but it will need to make sure to
+keep/add attribution.
 
 Rejected Ideas
 ==============
