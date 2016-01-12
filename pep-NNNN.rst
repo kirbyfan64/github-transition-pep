@@ -11,8 +11,8 @@ Post-History:
 
 Abstract
 ========
-This PEP outlines the steps required to migrate the development
-process for Python from Mercurial as hosted at
+This PEP outlines the steps required to migrate Python's development
+process from Mercurial as hosted at
 hg.python.org [#h.p.o]_ to Git on GitHub [#GitHub]_. Meeting the
 minimum goals of this PEP should allow for the development workflow
 of Python to be as productive as it currently is, and meeting its
@@ -20,34 +20,34 @@ extended goals should improve it.
 
 Rationale
 =========
-In 2014 it began to become obvious that Python's custom development
+In 2014, it began to become obvious that Python's custom development
 process was becoming a hindrance. As an example, for an external
 contributor to submit a fix for a bug that eventually was committed,
 the basic steps were:
 
-1. Open an issue for the bug at bugs.python.org [#b.p.o]_
-2. Checkout out the CPython source code from hg.python.org [#h.p.o]_
-3. Make the fix
-4. Upload a patch
+1. Open an issue for the bug at bugs.python.org [#b.p.o]_.
+2. Checkout out the CPython source code from hg.python.org [#h.p.o]_.
+3. Make the fix.
+4. Upload a patch.
 5. Have a core developer review the patch using our fork of the
-   Rietveld code review tool [#rietveld]_
-6. Download the patch to make sure it still applies cleanly
-7. Run the test suite
-8. Commit the change
+   Rietveld code review tool [#rietveld]_.
+6. Download the patch to make sure it still applies cleanly.
+7. Run the test suite.
+8. Commit the change.
 9. If the change was for a bugfix release, merge into the
-   in-development branch
-10. Run the test suite again
-11. Commit the merge
-12. Push the changes
+   in-development branch.
+10. Run the test suite again.
+11. Commit the merge.
+12. Push the changes.
 
-The problem with this is it is a rather heavy process if you simply
-want to fix a spelling mistake in the documentation. Even in this
-simple case you could only possible skip the code review step as you
+Being a very heavy process, this is problematic if you simply want to
+fix a spelling mistake in the documentation. Even in that
+simple case, you could only possibly skip the code review step, as you
 would still need to build the documentation. This led to patches
 languishing on the issue tracker due to core developers not being
 able to work through the backlog fast enough to keep up with
-submissions. This led to a side-effect issue of discouraging
-outside contribution which is critical for an open source project to
+submissions. In turn, that led to a side-effect issue of discouraging
+outside contribution, which is critical for an open source project to
 stay vibrant and have a viable future.
 
 Hence the decision was made in late 2014 that a move to a new
@@ -60,32 +60,32 @@ The year 2015 was spent off-and-on working on those proposals and
 trying to tease out details of what made them different from each
 other on the core-workflow mailing list [#core-workflow]_.
 PyCon US 2015 also showed that the community was a bit frustrated
-with our process thanks to cognitive overheard for new contributors
-as well as how long it was taking for core developers to getting
+with our process due to both cognitive overheard for new contributors
+and how long it was taking for core developers to getting
 around to looking at a patch (see the end of Guido van Rossum's
 keynote at PyCon US 2015 [#guido-keynote]_).
 
-On January 1, 2016 the decision was made by Brett Cannon to move our
+On January 1, 2016, the decision was made by Brett Cannon to move our
 development process to GitHub. The key reasons for choosing GitHub
 were [#reasons]_:
 
 * Maintaining our own infrastructure has been a burden on volunteers
   (e.g., we currently use a custom fork of Rietveld [#rietveld]_
-  that is not being maintained)
+  that is not being maintained).
 * Our custom workflow is very time-consuming for core developers
-  (not enough automated tooling built to help support it)
-* Our custom workflow was a hindrance to external contributors
+  (not enough automated tooling built to help support it).
+* Our custom workflow is a hindrance to external contributors
   (acts as a barrier of entry due to time required to ramp up on
-  development process)
-* There was no feature differentiating GitLab from GitHub beyond
-  GitLab being open source
-* Familiarity with GitHub was far higher amongst core developers and
-  external contributors than with GitLab
-* Our BDFL preferred GitHub (who would be the first person to tell
+  development process).
+* There is no feature differentiating GitLab from GitHub beyond
+  GitLab being open source.
+* Familiarity with GitHub is far higher amongst core developers and
+  external contributors than with GitLab.
+* Our BDFL prefers GitHub (who would be the first person to tell
   you that his opinion shouldn't matter, but the person making the
   decision felt it was important that the BDFL feel comfortable with
   the workflow of his own programming language to encourage his
-  participation)
+  participation).
 
 
 Repositories to Migrate
@@ -119,7 +119,7 @@ Requirements for Code-Only Repositories
 Completion of the requirements in this section will allow the
 devinabox, benchmarks, and tracker repositories to move to
 GitHub. While devinabox has a sufficiently descriptive name, the
-benchmarks repository does not, hence it will be named
+benchmarks repository does not; therefore, it will be named
 "python-benchmark-suite". The tracker repo also has a misleading name
 and will be renamed "bugs.python.org".
 
@@ -137,7 +137,7 @@ Define commands to move a Mercurial repository to Git
 Since moving to GitHub also entails moving to Git [#git]_, we must
 decide what tools and commands we will run to translate a Mercurial
 repository to Git. The exact tools and steps to use are an
-open issue: `Tools and commands to move from Mercurial to Git`_.
+open issue; see `Tools and commands to move from Mercurial to Git`_.
 
 CLA enforcement
 '''''''''''''''
@@ -147,7 +147,7 @@ making contributions have signed a contributor license agreement
 (CLA) [#cla]_. Up until now, enforcement of CLA signing of
 contributed code has been enforced by core developers checking
 whether someone had an ``*`` by their username on
-bugs.python.org [#b.p.o]_. With this migration the plan is to start
+bugs.python.org [#b.p.o]_. With this migration, the plan is to start
 off with automated checking and enforcement of contributors signing
 the CLA.
 
@@ -163,7 +163,7 @@ will be done through a new field in a user's profile.
 A bot to enforce CLA signing
 ++++++++++++++++++++++++++++
 With an association between someone's GitHub account and their
-bugs.python.org [#b.p.o]_ account which has the data as to whether
+bugs.python.org [#b.p.o]_ account, which has the data as to whether
 someone has signed the CLA, a bot can monitor pull requests on
 GitHub and denote whether the contributor has signed the CLA.
 
@@ -200,13 +200,13 @@ compared to the other repositories mentioned in this PEP.
 Document steps to commit a pull request
 '''''''''''''''''''''''''''''''''''''''
 During the process of choosing a new development workflow, it was
-decided that a linear history is desired. What this means is that the
-convenient "Merge" button in GitHub pull requests is undesireable as
+decided that a linear history is desired. This means that the
+convenient "Merge" button in GitHub pull requests is undesireable, as
 it creates a merge commit along with all of the contributor's
 individual commits (this does not affect the other repositories where
 the desire for a linear history isn't nearly as strong).
 
-Luckily Git [#git]_ does not require GitHub's workflow and so one can
+Luckily, Git [#git]_ does not require GitHub's workflow and so one can
 be chosen which gives us a linear history by using Git's CLI. The
 expectation is that all pull requests will be fast-forwarded and
 rebased before being pushed to the master repository. This should
